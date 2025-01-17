@@ -45,3 +45,15 @@ function displayWeather(data) {
     document.getElementById('windSpeed').textContent = `${data.wind.speed} km/h`;
     document.getElementById('weatherIcon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 }
+
+const weatherIcon = document.getElementByld('weatherlcon');
+ switch (weatherCondition)
+  {
+    
+    case 'sunny': weatherlcon.src = 'images/sunny.jpg';
+     break;
+    case 'cloudy': weatherlcon.src = 'images/cloudy.jpg';
+     break;
+    case 'rainy': weatherlcon.src = 'images/rainy.jpg'; 
+     break;
+  }
